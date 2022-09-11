@@ -16,11 +16,40 @@
 		<h3>Список должен содержать следующие гиперссылки:</h3>
 		<a href="www.kubsu.ru">1) абсолютную гиперссылку на главную страницу сайта example.com;</a><br>
 		<a href="https://www.kubsu.ru/">2) абсолютную на главную сайта example.com в протоколе https;</a><br>
+		<a href="ftp://www.kubsu.ru/icon.png">3) ссылку на файл на сервере FTP без авторизации;</a><br>
+		<a href="ftp://www.kubsu.ru/icon.png">4) ссылку на файл на сервере FTP с авторизацией;</a><br>
+		<a href="https://www.kubsu.ru/ru/university#block-block-9">5) ссылку на фрагмент страницы некоторого сайта;</a><br>
+		<a href="#form">6) ссылку на фрагмент текущей страницы;</a><br>
+		<a href="https://example.com/list?page=10&reg=23">7) ссылку с двумя параметрами в URL;</a><br>
+		<p>8) список ссылок основной навигации сайта с подписями title;</p>
+		<ul>
+			<li><a href="https://www.kubsu.ru/ru/university">Университет</a></li>
+			<li><a href="https://www.kubsu.ru/ru/education">Образование</a></li>
+			<li><a href="https://www.kubsu.ru/ru/science">Наука и инновации</a></li>
+			<li><a href="https://www.kubsu.ru/ru/abiturient">Абитуриентам</a></li>
+			<li><a href="https://www.kubsu.ru/ru/studlife">Студентам</a></li>
+		</ul>
+		<a>9) ссылку без href;</a>
+		<a href="">10) ссылку с пустым href;</a>
+		<a href="https://www.kubsu.ru/" rel="nofollow">11) ссылку, по которой запрещен переход поисковикам;</a>
+		<a href="https://www.kubsu.ru/"><!--noindex-->12) запрещенную для индексации поисковиками;<!--/noindex--></a>
+		<p>13) контекстную <a href="https://www.kubsu.ru/">ссылку</a> в тексте абзаца;</p>
+		<a href="http://htmlbook.ru/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1200px-HTML5_logo_and_wordmark.svg.png" alt="HTML5"></a>
+
+		15) ссылки из прямоугольных и круглых областей картинки (HTML-тег map);
+		<a href="page">16) относительную на страницу в текущем каталоге;</a>
+		<a href="../about/page">17) относительную на страницу в каталоге about;</a>
+		<a href="../page">18) относительную на страницу в каталоге уровнем выше текущего;</a>
+		<a href="../../page">19) относительную на страницу в каталоге двумя уровнями выше;</a>
+		
+
+20) сокращенную на главную;
+21) сокращенную ссылку на внутреннюю.
 	</div>
 
-	<div class="content">
+	<div class="content" id="form">
 		<h3>Форма должна содержать следующие поля:</h3>
-		<form action="">
+		<form>
 			<input type="text" name="name" id="name" placeholder="Имя"><br>
 			<input type="email" name="email" id="email" placeholder="E-mail"><br>
 			<input type="date" name="bday" id="bday"><br>
@@ -28,7 +57,8 @@
 				<input type="radio" value="male" name="gender">Мужской<br>
 				<input type="radio" value="female" name="gender">Женский<br>
 			</fieldset>
-			<input type="number" name="count" id="count" placeholder="Число конечностей"><br>
+			<input type="number" name="count" id="count" placeholder="Число конечностей" min="0"><br>
+			<input type="submit" value="Отправить">
 		</form>
 	</div>
 </body>
