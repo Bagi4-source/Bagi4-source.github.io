@@ -54,20 +54,22 @@
 		<a href="/page">21) сокращенную ссылку на внутреннюю.</a>
 	</div>
 
-	<div id="form" style="width: 250px;">
+	<div id="form">
 		<h3>Форма должна содержать следующие поля:</h3>
-		<form class="content">
-			<input type="text" name="name" id="name" placeholder="Имя">
-			<input type="email" name="email" id="email" placeholder="E-mail">
-			<input type="date" name="bday" id="bday">
-			<fieldset id="gender" style="border: none;">
-				<legend>Пол:</legend>
-				<input type="radio" value="male" name="gender">Мужской<br>
-				<input type="radio" value="female" name="gender">Женский
-			</fieldset>
-			<input type="number" name="count" id="count" placeholder="Число конечностей" min="0">
-			<input type="submit" value="Отправить">
-		</form>
+		<div style="width: 250px;">
+			<form class="content">
+				<input type="text" name="name" id="name" placeholder="Имя">
+				<input type="email" name="email" id="email" placeholder="E-mail">
+				<input type="date" name="bday" id="bday">
+				<fieldset id="gender" style="border: none;">
+					<legend>Пол:</legend>
+					<input type="radio" value="male" name="gender">Мужской<br>
+					<input type="radio" value="female" name="gender">Женский
+				</fieldset>
+				<input type="number" name="count" id="count" placeholder="Число конечностей" min="0">
+				<input type="submit" value="Отправить">
+			</form>
+		</div>
 	</div>
 </body>
 </html>
