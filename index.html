@@ -8,9 +8,9 @@
 		input {
 			margin: 5px;
 		}
-		.content {
+		.field {
 			display: flex;
-    		flex-direction: column;
+			flex-direction: column;
 		}
 	</style>
 </head>
@@ -18,56 +18,102 @@
 	<h1>Сверстать HTML 5 страницу с нумерованным списком гиперссылок и формой.</h1>
 	<div class="content">
 		<h3>Список должен содержать следующие гиперссылки:</h3>
-		<a href="www.kubsu.ru">1) абсолютную гиперссылку на главную страницу сайта example.com;</a>
-		<a href="https://www.kubsu.ru/">2) абсолютную на главную сайта example.com в протоколе https;</a>
-		<a href="ftp://www.kubsu.ru/icon.png">3) ссылку на файл на сервере FTP без авторизации;</a>
-		<a href="ftp:/user:pass@www.kubsu.ru/icon.png">4) ссылку на файл на сервере FTP с авторизацией;</a>
-		<a href="https://www.kubsu.ru/ru/university#block-block-9">5) ссылку на фрагмент страницы некоторого сайта;</a>
-		<a href="#form">6) ссылку на фрагмент текущей страницы;</a>
-		<a href="https://example.com/list?page=10&reg=23">7) ссылку с двумя параметрами в URL;</a>
-		<span>8) список ссылок основной навигации сайта с подписями title;</span>
-		<ul>
-			<li><a href="https://www.kubsu.ru/ru/university">Университет</a></li>
-			<li><a href="https://www.kubsu.ru/ru/education">Образование</a></li>
-			<li><a href="https://www.kubsu.ru/ru/science">Наука и инновации</a></li>
-			<li><a href="https://www.kubsu.ru/ru/abiturient">Абитуриентам</a></li>
-			<li><a href="https://www.kubsu.ru/ru/studlife">Студентам</a></li>
-		</ul>
-		<a>9) ссылку без href;</a>
-		<a href="">10) ссылку с пустым href;</a>
-		<a href="https://www.kubsu.ru/" rel="nofollow">11) ссылку, по которой запрещен переход поисковикам;</a>
-		<a href="https://www.kubsu.ru/"><!--noindex-->12) запрещенную для индексации поисковиками;<!--/noindex--></a>
-		<span>13) контекстную <a href="https://www.kubsu.ru/">ссылку</a> в тексте абзаца;</span>
-		<a href="http://htmlbook.ru/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1200px-HTML5_logo_and_wordmark.svg.png" alt="HTML5" width="200"></a>
-		<span>15) ссылки из прямоугольных и круглых областей картинки (HTML-тег map);</span>
-		<img src="https://megabook.ru/stream/mediapreview?Key=Фигура%20(геометрические%20фигуры)&Width=654&Height=654" width="200" alt="Geoms" usemap="#urls">
-		<map name="urls">
-			<area shape="rect" coords="20,20,80,80" href="https://www.kubsu.ru/ru/university">
-			<area shape="circle" coords="142,84,38" href="https://www.kubsu.ru/ru/education">
-			<area shape="poly" coords="38,160,78,98,120,160" href="https://www.kubsu.ru/ru/science">
-		</map>
-		<a href="page">16) относительную на страницу в текущем каталоге;</a>
-		<a href="about/page">17) относительную на страницу в каталоге about;</a>
-		<a href="../page">18) относительную на страницу в каталоге уровнем выше текущего;</a>
-		<a href="../../page">19) относительную на страницу в каталоге двумя уровнями выше;</a>
-		<a href="/">20) сокращенную на главную;</a>
-		<a href="/page">21) сокращенную ссылку на внутреннюю.</a>
+		<ol>
+			<li><a href="www.kubsu.ru">абсолютную гиперссылку на главную страницу сайта example.com;</a></li>
+			<li><a href="https://www.kubsu.ru/">абсолютную на главную сайта example.com в протоколе https;</a></li>	
+			<li><a href="ftp://www.kubsu.ru/icon.png">ссылку на файл на сервере FTP без авторизации;</a></li>
+			<li><a href="ftp:/user:pass@www.kubsu.ru/icon.png">ссылку на файл на сервере FTP с авторизацией;</a></li>
+			<li><a href="https://www.kubsu.ru/ru/university#block-block-9">ссылку на фрагмент страницы некоторого сайта;</a></li>
+			<li><a href="#form">ссылку на фрагмент текущей страницы;</a></li>
+			<li><a href="https://example.com/list?page=10&reg=23">ссылку с двумя параметрами в URL;</a></li>
+			<li>
+				<p>список ссылок основной навигации сайта с подписями title;</p>
+				<ul>
+					<li><a href="https://www.kubsu.ru/ru/university">Университет</a></li>
+					<li><a href="https://www.kubsu.ru/ru/education">Образование</a></li>
+					<li><a href="https://www.kubsu.ru/ru/science">Наука и инновации</a></li>
+					<li><a href="https://www.kubsu.ru/ru/abiturient">Абитуриентам</a></li>
+					<li><a href="https://www.kubsu.ru/ru/studlife">Студентам</a></li>
+				</ul>
+			</li>
+			<li><a>ссылку без href;</a></li>
+			<li><a href="">ссылку с пустым href;</a></li>
+			<li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" rel="nofollow">ссылку, по которой запрещен переход поисковикам;</a></li>
+			<li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><!--noindex-->запрещенную для индексации поисковиками;<!--/noindex--></a></li>
+			<li><p>контекстную <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">ссылку</a> в тексте абзаца;</p></li>
+			<li>
+				<p></p>
+				<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1200px-HTML5_logo_and_wordmark.svg.png" alt="HTML5" width="200"></a>
+			</li>
+			<li>
+				<p>ссылки из прямоугольных и круглых областей картинки (HTML-тег map);</p>
+				<img src="https://megabook.ru/stream/mediapreview?Key=Фигура%20(геометрические%20фигуры)&Width=654&Height=654" width="200" alt="Geoms" usemap="#urls">
+				<map name="urls">
+					<area shape="rect" coords="20,20,80,80" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+					<area shape="circle" coords="142,84,38" href="https://www.kubsu.ru/ru/education">
+					<area shape="poly" coords="38,160,78,98,120,160" href="https://www.kubsu.ru/ru/science">
+				</map>
+			</li>
+			<li><a href="page">относительную на страницу в текущем каталоге;</a></li>
+			<li><a href="about/page">относительную на страницу в каталоге about;</a></li>
+			<li><a href="../page">относительную на страницу в каталоге уровнем выше текущего;</a></li>
+			<li><a href="../../page">относительную на страницу в каталоге двумя уровнями выше;</a></li>
+			<li><a href="/">сокращенную на главную;</a></li>
+			<li><a href="/page">сокращенную ссылку на внутреннюю.</a></li>
+		</ol>
 	</div>
 
 	<div id="form">
 		<h3>Форма должна содержать следующие поля:</h3>
 		<div style="width: 250px;">
-			<form class="content">
-				<input type="text" name="name" id="name" placeholder="Имя">
-				<input type="email" name="email" id="email" placeholder="E-mail">
-				<input type="date" name="bday" id="bday">
-				<fieldset id="gender" style="border: none;">
-					<legend>Пол:</legend>
-					<input type="radio" value="male" name="gender">Мужской<br>
-					<input type="radio" value="female" name="gender">Женский
-				</fieldset>
-				<input type="number" name="count" id="count" placeholder="Число конечностей" min="0">
-				<input type="submit" value="Отправить">
+			<form>
+				<div class="field name">
+					<label for="name">Имя:</label>
+					<input type="text" name="name" id="name" placeholder="Имя">
+				</div>
+				<div class="field email">
+					<label for="email">E-mail:</label>
+					<input type="email" name="email" id="email" placeholder="E-mail">
+				</div>
+				<div class="field bday">
+					<label for="bday">Дата рождения:</label>
+					<input type="date" name="bday" id="bday">
+				</div>
+				
+				<div class="field gender">
+					<label for="gender">Пол:</label>
+					<div id="gender">
+						<label><input type="radio" value="male" name="gender">Мужской</label>
+						<label><input type="radio" value="female" name="gender">Женский</label>
+					</div>
+				</div>
+				<div class="field count">
+					<label for="count">Число конечностей:</label>
+					<div id="count">
+						<label><input type="radio" value="0" name="count">0</label>
+						<label><input type="radio" value="1" name="count">1</label>
+						<label><input type="radio" value="2" name="count">2</label>
+						<label><input type="radio" value="3" name="count">3</label>
+						<label><input type="radio" value="4" name="count">4</label>
+					</div>
+				</div>
+				<div class="field superpower">
+					<label for="superpower">Сверхспособности:</label>
+					<select name="superpower" id="superpower" multiple="multiple">
+						<option value="бессмертие">бессмертие</option>
+						<option value="прохождение сквозь стены">прохождение сквозь стены</option>
+						<option value="левитация">левитация</option>
+					</select>
+				</div>
+				<div class="field biography">
+					<label for="">Биография:</label>
+					<textarea name="biography" id="biography" cols="30" rows="10"></textarea>
+				</div>
+				<div class="field agreement">
+					<label for="">С контрактом ознакомлен (а):</label>
+					<input type="checkbox" name="agreement">
+				</div>
+				<input id="submit" type="submit" value="Отправить">
 			</form>
 		</div>
 	</div>
