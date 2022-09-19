@@ -49,9 +49,9 @@
 				<p>ссылки из прямоугольных и круглых областей картинки (HTML-тег map);</p>
 				<img src="https://megabook.ru/stream/mediapreview?Key=Фигура%20(геометрические%20фигуры)&Width=654&Height=654" width="200" alt="Geoms" usemap="#urls">
 				<map name="urls">
-					<area shape="rect" coords="20,20,80,80" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
-					<area shape="circle" coords="142,84,38" href="https://www.kubsu.ru/ru/education">
-					<area shape="poly" coords="38,160,78,98,120,160" href="https://www.kubsu.ru/ru/science">
+					<area shape="rect" coords="20,20,80,80" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" alt="rect">
+					<area shape="circle" coords="142,84,38" href="https://www.kubsu.ru/ru/education" alt="circle">
+					<area shape="poly" coords="38,160,78,98,120,160" href="https://www.kubsu.ru/ru/science" alt="triangle">
 				</map>
 			</li>
 			<li><a href="page">относительную на страницу в текущем каталоге;</a></li>
@@ -82,20 +82,20 @@
 				
 				<div class="field gender">
 					<label for="gender">Пол:</label>
-					<div id="gender">
+					<fieldset id="gender">
 						<label><input type="radio" value="male" name="gender">Мужской</label>
 						<label><input type="radio" value="female" name="gender">Женский</label>
-					</div>
+					</fieldset>
 				</div>
 				<div class="field count">
 					<label for="count">Число конечностей:</label>
-					<div id="count">
+					<fieldset id="count">
 						<label><input type="radio" value="0" name="count">0</label>
 						<label><input type="radio" value="1" name="count">1</label>
 						<label><input type="radio" value="2" name="count">2</label>
 						<label><input type="radio" value="3" name="count">3</label>
 						<label><input type="radio" value="4" name="count">4</label>
-					</div>
+					</fieldset>
 				</div>
 				<div class="field superpower">
 					<label for="superpower">Сверхспособности:</label>
@@ -106,12 +106,12 @@
 					</select>
 				</div>
 				<div class="field biography">
-					<label for="">Биография:</label>
+					<label for="biography">Биография:</label>
 					<textarea name="biography" id="biography" cols="30" rows="10"></textarea>
 				</div>
 				<div class="field agreement">
-					<label for="">С контрактом ознакомлен (а):</label>
-					<input type="checkbox" name="agreement">
+					<label for="agreement">С контрактом ознакомлен (а):</label>
+					<input type="checkbox" name="agreement" id="agreement">
 				</div>
 				<input id="submit" type="submit" value="Отправить">
 			</form>
